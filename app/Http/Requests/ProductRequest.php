@@ -32,7 +32,7 @@ class ProductRequest extends FormRequest
        if ($this->route()->getActionMethod() === 'store') {
            $rules['image'] = 'required|image';
        }
-       dd($this->route()->getActionMethod());
+//       dd($this->route()->getActionMethod());
 
        return $rules;
 
